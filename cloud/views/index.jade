@@ -1,0 +1,13 @@
+extends ./layout
+
+block title
+  title home page
+block append styles
+  link(rel="stylesheet", href="css/index.css")
+  link(rel="stylesheet", href="css/blog.css")
+block content
+  .container
+    .g-blog-header
+      h1.g-blog-title GrePuG's Blog
+      p.g-blog-description Innovation distinguishes between a leader and a follower
+    include ./inc/blogContent
